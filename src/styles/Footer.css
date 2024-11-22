@@ -1,0 +1,77 @@
+/* Ensure the document height takes up the full viewport */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Flex container for the entire layout */
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* Ensure it spans the full viewport */
+}
+
+/* Main content grows to push the footer down when needed */
+.main-content {
+  flex: 1;
+  /* Push the footer down if content is short */
+
+  margin: 0;
+}
+
+/* Sticky Footer */
+.home-footer {
+  background-color: #4a5d3b;
+  color: white;
+  width: 100%;
+  padding: 2rem;
+  text-align: center;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* Ensures links wrap on smaller screens */
+  width: 100%;
+}
+
+.footer-column {
+  flex: 1;
+  margin: 0 1rem;
+}
+
+.footer-column h4 {
+  margin-bottom: 1rem;
+}
+
+.footer-column a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+}
+
+.footer-column a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .footer-links {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-column {
+    margin: 1rem 0;
+    /* Add spacing between columns */
+  }
+}

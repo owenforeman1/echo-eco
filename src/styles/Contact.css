@@ -1,0 +1,97 @@
+/* Main container */
+.contact-page {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+  /* Ensure it spans the full viewport height */
+  gap: 2rem;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+}
+
+/* Left section: Contact info */
+.contact-info {
+  flex: 1;
+  max-width: 400px;
+  text-align: center;
+  /* Center text horizontally */
+}
+
+.contact-info h2 {
+  font-size: 1.8rem;
+  color: #4a5d3b;
+}
+
+.contact-info p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Right section: Contact form */
+.contact-form-container {
+  flex: 1;
+  max-width: 600px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.form-row input {
+  flex: 1;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  min-height: 100px;
+}
+
+.submit-button {
+  background-color: #4a5d3b;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #3b4d2a;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .contact-page {
+    flex-direction: column;
+    text-align: center;
+    /* Center-align text on smaller screens */
+  }
+
+  .contact-info,
+  .contact-form-container {
+    max-width: 100%;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+}

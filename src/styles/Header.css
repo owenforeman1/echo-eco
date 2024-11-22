@@ -1,0 +1,70 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4a5d3b;
+  padding: 1rem 2rem;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  /* Align elements horizontally */
+  align-items: center;
+  /* Align vertically */
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.logo a {
+  color: white;
+  text-decoration: none;
+  margin-right: 0.5rem;
+  /* Add spacing between title and tagline */
+}
+
+.logo p {
+  font-size: 0.9rem;
+  /* Smaller font size for the tagline */
+  color: #d1d1d1;
+  padding-left: 10px;
+  margin: 0;
+      margin-top: revert-layer;
+  white-space: nowrap;
+}
+
+.nav-links ul {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links ul li {
+  margin-right: 1.5rem;
+}
+
+.nav-links ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.nav-links ul li a:hover {
+  text-decoration: underline;
+}
+
+.account-cart {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.account-cart a {
+  color: white;
+  text-decoration: none;
+}
+
+.account-cart a:hover {
+  text-decoration: underline;
+}

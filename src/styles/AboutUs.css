@@ -1,0 +1,82 @@
+.about-page {
+  font-family: Arial, sans-serif;
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #333;
+  text-align: center;
+}
+
+.about-header {
+  margin-bottom: 2rem;
+}
+
+.about-header h1 {
+  font-size: 2.5rem;
+  color: #4a5d3b;
+}
+
+.about-header .tagline {
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 0.5rem;
+}
+
+.about-mission,
+.about-values,
+.about-story {
+  margin-bottom: 2rem;
+}
+
+.about-mission h2,
+.about-values h2,
+.about-story h2 {
+  color: #4a5d3b;
+  margin-bottom: 1rem;
+}
+
+.about-mission p,
+.about-story p {
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+.about-values ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-values li {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.about-values li strong {
+  color: #4a5d3b;
+}
+
+.about-cta {
+  background-color: #4a5d3b;
+  color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.about-cta p {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.cta-button {
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background-color: #c4423e;
+}
